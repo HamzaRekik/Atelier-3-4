@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-using Atelier3.Models.Repositories;
 using Atelier3.Models;
-using Microsoft.AspNetCore.Identity;
-
+using Atelier3.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,13 +10,6 @@ builder.Services.AddDbContextPool<StudentContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("StudentDBConnection")));
 builder.Services.AddScoped<ISchoolRepository, SchoolRepository>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<StudentContext>();
-builder.Services.Configure<IdentityOptions>(options =>
-{
-    // Default Password settings.
-    options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequireUppercase = false;
-});
 
 var app = builder.Build();
 
@@ -34,7 +25,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -42,3 +33,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();

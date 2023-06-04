@@ -1,54 +1,45 @@
 ﻿using Atelier3.Models;
-using Atelier3.Models.Repositories;
+using Atelier3.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Hosting.Internal;
 
 namespace Atelier3.Controllers
 {
     public class StudentController : Controller
     {
-        //injection de dépendance
+        // Injection des dépendances par le constructeur
         readonly IStudentRepository StudentRepository;
         readonly ISchoolRepository SchoolRepository;
-        private readonly IWebHostEnvironment hostingEnvironment;
-        public StudentController(IStudentRepository studentRepository, ISchoolRepository schoolRepository)
+        public StudentController(IStudentRepository StudentRepository, ISchoolRepository schoolrepository)
         {
-            StudentRepository = studentRepository;
-            SchoolRepository = schoolRepository;
+            this.StudentRepository = StudentRepository;
+            this.SchoolRepository = schoolrepository;
         }
-        // GET: StudentController
         public ActionResult Index()
         {
-            var students = StudentRepository.GetAll();
-            return View(students);
+            ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
+            return View(StudentRepository.GetAll());
         }
-
         // GET: StudentController/Details/5
         public ActionResult Details(int id)
         {
-            var students = StudentRepository.GetById(id);
-                return View(students);
+            return View(StudentRepository.GetById(id));
         }
-
         // GET: StudentController/Create
         public ActionResult Create()
         {
-            ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID","SchoolName");
+            ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
             return View();
         }
-
-        
-        // POST: ProductController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(CreateViewModel model,Student s)
+        public ActionResult Create(Student s)
         {
             try
             {
-                ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
+                ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName", s.SchoolID);
                 StudentRepository.Add(s);
+                ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -56,24 +47,24 @@ namespace Atelier3.Controllers
                 return View();
             }
         }
-
         // GET: StudentController/Edit/5
         public ActionResult Edit(int id)
         {
             ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
-            var Students = StudentRepository.GetById(id);
-            return View(Students);
-        }
+            var s = StudentRepository.GetById(id);
+            ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
 
-        // POST: StudentController/Edit/5
+            return View(s);
+        }
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection,Student s)
+        // POST: EmployeeController/Edit/5
+        public ActionResult Edit(Student std)
         {
             try
             {
+                ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName", std.SchoolID);
+                StudentRepository.Edit(std);
                 ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
-                StudentRepository.Edit(s);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -82,21 +73,31 @@ namespace Atelier3.Controllers
             }
         }
 
-        // GET: StudentController/Delete/5
+        public ActionResult Search(string name, int? schoolid)
+        {
+            var result = StudentRepository.GetAll();
+            if (!string.IsNullOrEmpty(name))
+                result = StudentRepository.FindByName(name);
+            else
+            if (schoolid != null)
+                result = StudentRepository.GetStudentsBySchoolID(schoolid);
+            ViewBag.SchoolID = new SelectList(SchoolRepository.GetAll(), "SchoolID", "SchoolName");
+            return View("Index", result);
+        }
+
+
+
         public ActionResult Delete(int id)
         {
-            var students = StudentRepository.GetById(id);
-            return View(students);
+            var Student = StudentRepository.GetById(id);
+            return View(Student);
         }
-
-        // POST: StudentController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection, Student s)
+        public ActionResult Delete(Student s)
         {
             try
             {
-                 StudentRepository.Delete(s);
+                StudentRepository.Delete(s);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -104,5 +105,6 @@ namespace Atelier3.Controllers
                 return View();
             }
         }
+
     }
 }

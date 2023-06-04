@@ -4,36 +4,44 @@
     ViewData["Title"] = "Index";
 }
 
-<h4>List of schools</h4>
-<hr />
-<table class="table align-items-center mb-0">
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
     <thead>
         <tr>
-            <th style="text-align:center;">
+            <th>
+                @Html.DisplayNameFor(model => model.SchoolID)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.SchoolName)
             </th>
-            <th style="text-align:center;">
+            <th>
                 @Html.DisplayNameFor(model => model.SchoolAdress)
             </th>
-            <th style="text-align:center;">Action</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td style="text-align:center;">
-                    @Html.DisplayFor(modelItem => item.SchoolName)
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SchoolID)
                 </td>
-                <td style="text-align:center;">
-                    @Html.DisplayFor(modelItem => item.SchoolAdress)
-                </td>
-                <td style="text-align:center;">
-                    <a class="btn btn-link text-dark px-3 mb-0" asp-action="Edit" asp-route-id="@item.SchoolID"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a> |
-                    <a class="btn btn-link text-dark px-3 mb-0" asp-action="Details" asp-route-id="@item.SchoolID">Details</a> |
-                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" asp-action="Delete" asp-route-id="@item.SchoolID"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                </td>
-            </tr>
-        }
+            <td>
+                @Html.DisplayFor(modelItem => item.SchoolName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SchoolAdress)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SchoolID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SchoolID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SchoolID">Delete</a>
+            </td>
+        </tr>
+}
     </tbody>
 </table>

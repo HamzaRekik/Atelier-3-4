@@ -1,33 +1,32 @@
 ﻿using Atelier3.Models;
-using Atelier3.Models.Repositories;
-using Microsoft.AspNetCore.Authorization;
+using Atelier3.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Atelier3.Controllers
 {
-    [Authorize]
     public class SchoolController : Controller
     {
-        readonly IStudentRepository StudentRepository;
+        //injection de dependance
         readonly ISchoolRepository SchoolRepository;
-        public SchoolController(IStudentRepository studentRepository, ISchoolRepository schoolRepository)
+        public SchoolController(ISchoolRepository schoolRepository)
         {
-            StudentRepository = studentRepository;
             SchoolRepository = schoolRepository;
         }
+
+    
         // GET: SchoolController
-        [AllowAnonymous]
         public ActionResult Index()
         {
-            var schools = SchoolRepository.GetAll();
-            return View(schools);
+            var Schools = SchoolRepository.GetAll();
+            return View(Schools);
         }
 
         // GET: SchoolController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var School = SchoolRepository.GetById(id);
+            return View(School);
         }
 
         // GET: SchoolController/Create
@@ -39,7 +38,7 @@ namespace Atelier3.Controllers
         // POST: SchoolController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection, School s)
+        public ActionResult Create(School s)
         {
             try
             {
@@ -55,14 +54,15 @@ namespace Atelier3.Controllers
         // GET: SchoolController/Edit/5
         public ActionResult Edit(int id)
         {
-            var Schools = SchoolRepository.GetById(id);
-            return View(Schools);
+            var School = SchoolRepository.GetById(id);
+
+            return View(School);
         }
 
         // POST: SchoolController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection, School s)
+        public ActionResult Edit(School s, IFormCollection collection)
         {
             try
             {
@@ -78,14 +78,14 @@ namespace Atelier3.Controllers
         // GET: SchoolController/Delete/5
         public ActionResult Delete(int id)
         {
-            var Schools = SchoolRepository.GetById(id);
-            return View(Schools);
+            var School = SchoolRepository.GetById(id);
+            return View(School);
         }
 
         // POST: SchoolController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection,School s)
+        public ActionResult Delete(School s, IFormCollection collection)
         {
             try
             {
@@ -97,5 +97,7 @@ namespace Atelier3.Controllers
                 return View();
             }
         }
+
+     
     }
 }

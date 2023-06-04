@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Atelier3\\Atelier3\\Atelier3.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\Atelier3\\TP3\\Atelier3\\Atelier3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Atelier3\\Atelier3\\Atelier3.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\Atelier3\\TP3\\Atelier3\\Atelier3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Atelier3\\Atelier3\\Atelier3.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Atelier3\\TP3\\Atelier3\\Atelier3.csproj",
         "projectName": "Atelier3",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Atelier3\\Atelier3\\Atelier3.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Atelier3\\TP3\\Atelier3\\Atelier3.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Atelier3\\Atelier3\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Atelier3\\TP3\\Atelier3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,6 +62,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [

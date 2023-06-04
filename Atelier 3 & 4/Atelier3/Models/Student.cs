@@ -13,6 +13,5 @@ namespace Atelier3.Models
         public DateTime BirthDate { get; set; }
         public int SchoolID { get; set; }
         public School School { get; set; }
-        
     }
 }
