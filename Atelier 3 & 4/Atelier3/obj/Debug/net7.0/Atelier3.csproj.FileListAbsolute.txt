@@ -1,0 +1,92 @@
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\appsettings.Development.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\appsettings.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Atelier3.staticwebassets.runtime.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Atelier3.exe
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Atelier3.deps.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Atelier3.runtimeconfig.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Atelier3.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Atelier3.pdb
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Azure.Core.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Azure.Identity.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Humanizer.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.CodeDom.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Memory.Data.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.csproj.AssemblyReference.cache
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.GeneratedMSBuildEditorConfig.editorconfig
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.AssemblyInfoInputs.cache
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.AssemblyInfo.cs
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.csproj.CoreCompileInputs.cache
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.MvcApplicationPartsAssemblyInfo.cache
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.RazorAssemblyInfo.cache
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.RazorAssemblyInfo.cs
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets\msbuild.Atelier3.Microsoft.AspNetCore.StaticWebAssets.props
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets\msbuild.build.Atelier3.props
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atelier3.props
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atelier3.props
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets.pack.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets.build.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\staticwebassets.development.json
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\scopedcss\bundle\Atelier3.styles.css
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\scopedcss\projectbundle\Atelier3.bundle.scp.css
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.csproj.CopyComplete
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\refint\Atelier3.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.pdb
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.genruntimeconfig.cache
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\obj\Debug\net7.0\ref\Atelier3.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+F:\semestre 2\ASP.NET\Atelier3\Atelier3\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.dll
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\refint\Atelier3.dll
+C:\Users\Lenovo\Desktop\Atelier3\Atelier3\obj\Debug\net7.0\Atelier3.pdb
